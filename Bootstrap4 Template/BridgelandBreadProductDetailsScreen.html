@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css"
+        integrity="sha512-ARJR74swou2y0Q2V9k0GbzQ/5vJ2RBSoCWokg4zkfM29Fb3vZEQyv0iWBMW/yvKgyHSR/7D64pFMmU8nYmbRkg=="
+        crossorigin="anonymous" />
+    <title>Bridgeland Bread - Product Details</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark p-lg-8">
+            <span class="navbar-brand">Bridgeland Bread</span>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#sidemenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2">
+                <ul class="nav navbar-light bg-light navbar-expand-lg" style="height: 100%;">
+                    <div class="collapse navbar-collapse flex-column" id="sidemenu">
+                        <li class="nav-item d-flex flex-row mt-lg-4">
+
+                            <span class="material-icons md-dark p-2">
+                                assignment
+                            </span>
+
+
+                            <a class="nav-link active" style="color: black;font-weight: bolder;" href="#">Report</a>
+                        </li>
+                        <li class="nav-item d-flex flex-row">
+                            <span class="material-icons md-dark p-2">
+                                local_shipping
+                            </span>
+                            <a class="nav-link text-dark" href="BridgelandBreadDeliverySchedule.html">Delivery
+                                Schedule</a>
+                        </li>
+                        <li class="nav-item d-flex flex-row">
+                            <span class="material-icons md-dark p-2">
+                                people
+                            </span>
+                            <a class="nav-link text-dark" href="#">Manage Clients</a>
+                        </li>
+                        <li class="nav-item d-flex flex-row">
+                            <span class="material-icons md-dark p-2">
+                                breakfast_dining
+                            </span>
+                            <a class="nav-link text-dark" href="#">Manage Products</a>
+                        </li>
+                        <li class="nav-item d-flex flex-row">
+                            <span class="material-icons md-dark p-2">
+                                perm_identity
+                            </span>
+                            <a href="#" class="nav-link text-dark">Log Out</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+
+            <!-- Product Details Screen Area -->
+            <div class="col-lg-10">
+                <div class="row mt-4 ml-1">
+                    <p class="h4 font-weight-light">Product Details</p>
+                </div>
+                <div class="row ml-2 mt-2">
+                    <form action="#" method="POST" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="productName">Product Name</label>
+                            <input type="text" class="form-control" name="productName" id="productName"
+                                placeholder="Product Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="productPrice" class="col-form-label">Price</label>
+                            <input type="number" class="form-control" name="productPrice" id="productPrice" min="0"
+                                step=".01" placeholder="9.99" required></input>
+                        </div>
+                        <div class="form-group">
+                            <img class="card-img-top" src="NoImage.png" alt="product">
+                        </div>
+                        <div class="form-group">
+                            <label for="newImage">Upload new image</label>
+                            <input type="file" class="form-control-file" id="newImage">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+            <!-- END Product Details Screen Area -->
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js"
+        integrity="sha512-yDlE7vpGDP7o2eftkCiPZ+yuUyEcaBwoJoIhdXv71KZWugFqEphIS3PU60lEkFaz8RxaVsMpSvQxMBaKVwA5xg=="
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

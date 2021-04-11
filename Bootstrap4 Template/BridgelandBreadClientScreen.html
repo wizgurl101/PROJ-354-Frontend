@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css"
+        integrity="sha512-ARJR74swou2y0Q2V9k0GbzQ/5vJ2RBSoCWokg4zkfM29Fb3vZEQyv0iWBMW/yvKgyHSR/7D64pFMmU8nYmbRkg=="
+        crossorigin="anonymous" />
+    <title>Bridgeland Bread - Client</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark p-lg-8">
+            <span class="navbar-brand">Bridgeland Bread</span>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#sidemenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2">
+                <ul class="nav navbar-light bg-light navbar-expand-lg" style="height: 100%;">
+                    <div class="collapse navbar-collapse flex-column" id="sidemenu">
+                        <li class="nav-item d-flex flex-row mt-lg-4">
+
+                            <span class="material-icons md-dark p-2">
+                                assignment
+                            </span>
+
+
+                            <a class="nav-link active" style="color: black;font-weight: bolder;" href="#">Report</a>
+                        </li>
+                        <li class="nav-item d-flex flex-row">
+                            <span class="material-icons md-dark p-2">
+                                local_shipping
+                            </span>
+                            <a class="nav-link text-dark" href="BridgelandBreadDeliverySchedule.html">Delivery
+                                Schedule</a>
+                        </li>
+                        <li class="nav-item d-flex flex-row">
+                            <span class="material-icons md-dark p-2">
+                                people
+                            </span>
+                            <a class="nav-link text-dark" href="#">Manage Clients</a>
+                        </li>
+                        <li class="nav-item d-flex flex-row">
+                            <span class="material-icons md-dark p-2">
+                                breakfast_dining
+                            </span>
+                            <a class="nav-link text-dark" href="#">Manage Products</a>
+                        </li>
+                        <li class="nav-item d-flex flex-row">
+                            <span class="material-icons md-dark p-2">
+                                perm_identity
+                            </span>
+                            <a href="#" class="nav-link text-dark">Log Out</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+
+            <!-- Client Screen Area -->
+            <div class="col-lg-10">
+                <div class="row mt-4 ml-1">
+                    <p class="h4 font-weight-light">Manage Clients</p>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="row">
+                    <form class="form-inline ml-3 mt-4" action="#" method="GET">
+                        <div class="form-group">
+                            <label for="searchClientName" class="mr-2">Enter Client's First Name</label>
+                            <input type="text" class="form-control" name="searchClientName" id="searchClientName">
+                            <button type="submit" class="btn btn-outline-dark ml-2">Search</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <form class="form-inline ml-3 mt-1" action="#" method="GET">
+                        <div class="form-group">
+                            <label for="searchClientName" class="mr-2">Enter Client's Last Name</label>
+                            <input type="text" class="form-control" name="searchClientName" id="searchClientName">
+                            <button type="submit" class="btn btn-outline-dark ml-2">Search</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Client Listing -->
+                <!-- sort options -->
+                <div class="row mt-4">
+                    <div class="col-lg-8">
+                        <label for="sortbyOptions">Sort by:</label>
+                        <select class="selectpicker" name="sortbyOptions" id="sortbyOptions">
+                            <option>First Name</option>
+                            <option>Last Name</option>
+                            <option>Status</option>
+                            <option>Type</option>
+                            <option>Phone Number</option>
+                            <option></option>
+                        </select>
+                        <select class="selectpicker pl-2" name="asc_or_desc" id="asc_or_desc">
+                            <option>Ascending</option>
+                            <option>Descending</option>
+                        </select>
+                    </div>
+                    <!-- Add New Client -->
+                    <div class="col-lg-4">
+                        <button type="button" class="btn btn-outline-dark pr-4 pl-4 mr-2" data-toggle="modal"
+                            data-target="#addClientModal">
+                            Add New Client
+                        </button>
+                    </div>
+                </div>
+                <!-- Table of Clients -->
+                <div class="row">
+                    <div class="col pt-4 mr-5">
+                        <table class="table table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">First Name</th>
+                                    <th scope="col">Last Name</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Type</th>
+                                    <th scope="col">Phone Number</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Adam</th>
+                                    <td>Lowe</td>
+                                    <td>Active</td>
+                                    <td>Subscription</td>
+                                    <td>555-555-5555</td>
+                                    <td>
+                                        <button type="button" class="btn btn-outline-info">Details</button>
+                                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Jessie</th>
+                                    <td>May</td>
+                                    <td>Active</td>
+                                    <td>Subscription</td>
+                                    <td>555-555-5555</td>
+                                    <td>
+                                        <button type="button" class="btn btn-outline-info">Details</button>
+                                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add New Client Modal -->
+            <div class="modal fade" id="addClientModal" tabindex="-1" role="dialog"
+                aria-labelledby="addClientModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="addClientModalLabel">Add New Client</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="#" method="POST">
+                                <div class="form-group">
+                                    <label for="newClientFirstName" class="col-form-label">First Name</label>
+                                    <input type="text" class="form-control" name="newClientFirstName"
+                                        id="newClientFirstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="newClientLastName" class="col-form-label">Last Name</label>
+                                    <input type="text" class="form-control" name="newClientLastName"
+                                        id="newClientLastName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="newClientAddress" class="col-form-label">Address</label>
+                                    <input type="text" class="form-control" name="newClientAddress"
+                                        id="newClientAddress" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="newClientPostalCode" class="col-form-label">Postal Code</label>
+                                    <input type="text" class="form-control" name="newClientPostalCode"
+                                        id="newClientFirstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="newClientPhonenumber" class="col-form-label">Phone Number</label>
+                                    <input type="text" class="form-control" name="newClientPhonenumber"
+                                        id="newClientPhonenumber">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Add New Client</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END Client Screen Area -->
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js"
+        integrity="sha512-yDlE7vpGDP7o2eftkCiPZ+yuUyEcaBwoJoIhdXv71KZWugFqEphIS3PU60lEkFaz8RxaVsMpSvQxMBaKVwA5xg=="
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
