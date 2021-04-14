@@ -84,7 +84,7 @@
                             <select class="selectpicker" name="breadOptions" id="breadOptions">
                                 <option>White Sourdough</option>
                                 <option>House-Milled Einkorn</option>
-                                <option>Salt</option>
+                                <option selected>Salt</option>
                                 <option>Butter</option>
                             </select>
                         </div>
@@ -94,8 +94,14 @@
                                 step=".1" required></input>
                         </div>
                         <div class="form-group">
+                            <label for="orderQuantity" class="col-form-label">Quantity Sold</label>
+                            <input type="number" class="form-control" name="orderQuantity" id="orderQuantity" min="0"
+                                step=".1"></input>
+                        </div>
+                        <div class="form-group">
                             <label for="orderDeliveryDate">Delivery Date</label>
-                            <input type="date" name="orderDeliveryDate" id="orderDeliveryDate" min="2020-01-01">
+                            <input type="date" name="orderDeliveryDate" id="orderDeliveryDate" min="2020-01-01"
+                                value="2020-04-13">
                         </div>
                         <div class="form-group">
                             <label for="newOrderNote" class="col-form-label">Note</label>
