@@ -1,4 +1,4 @@
-# PROJ 354 Capstone Frontend Backup
+# PROJ 354 - Frontend Files Backup
 <p align="center">
 <img src="./BridgelandBreadLoginScreen.jpg" width="80%">
 </p>
