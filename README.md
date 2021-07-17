@@ -4,5 +4,4 @@
 </p>
 
 ## Description
-
-## About the project
+This repo contains the back files.
