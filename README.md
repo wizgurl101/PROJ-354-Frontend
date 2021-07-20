@@ -6,7 +6,7 @@
 
 ## Description
 
-This repo host frontend files I was responsible for implementing for my Group's Capstone Project.
+This repo host the frontend files I was responsible for implementing for my Group's Capstone Project.
 
 ## About the project
 
