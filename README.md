@@ -1,4 +1,4 @@
-# PROJ 354 - Frontend Files of Bridgeland Bakery's Customer Management System
+# PROJ 354 - Frontend Files of Bridgeland Bread's Customer Management System
 
 <p align="center">
 <img src="./screenshots/BridgelandBreadLoginScreen.jpg" width="80%">
@@ -10,7 +10,7 @@ This repo host the frontend files I was responsible for implementing for my Grou
 
 ## About the project
 
-Bridgeland Bakery is an online only bread subscription business and they were interested in a proof-of-concept to be
+Bridgeland Bread is an online only bread subscription business and they were interested in a proof-of-concept to be
 made for a customer management system. The system was to help the client manage their commerical and subscription customers.
 
 For the frontend, my process involved first making the HTML template of the layout with Bootstrap 4.  This allow me to troubleshoot layout issues and helped me to learn the framework in a timely matter.  Once the layout was done, I would make a JavaServer Page (JSP) of the screen and implemented the code to communicate with the backend.
