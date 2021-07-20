@@ -13,7 +13,7 @@ This repo host frontend files I was responsible for implementing for my Group's 
 Bridgeland Bakery is an online only bread subscription business and they were interested in a proof-of-concept to be
 made for a customer management system. The system was to help the client manage their commerical and subscription clients.
 
-For the frontend, my process involved first making the HTML template of the layout with Bootstrap 4.  This allow me to troubleshoot layout issues and aid in me learning the framework in a timely matter.  Once the layout was done, I would make a JavaServer Page (JSP) of the screen and implemented the code to communicate with the backend.
+For the frontend, my process involved first making the HTML template of the layout with Bootstrap 4.  This allow me to troubleshoot layout issues and helped me to learn the framework in a timely matter.  Once the layout was done, I would make a JavaServer Page (JSP) of the screen and implemented the code to communicate with the backend.
 
 The following technologies was used to implement this system: JavaServer Pages, Bootstrap 4, HTML5/CSS3, Java Servlet and MySQL.
 
