@@ -15,7 +15,7 @@ made for a customer management system. The system was to help the client manage 
 
 ## What have I learnt from this project
 
-- I had to learn Bootstrap 4 framework so that time spend development on the implementing the UI would be cut.
+- I had to learn Bootstrap 4 framework so that time spend on implementing the UI would be less and completed according to our timeline.
 - As a result, I improve and practice my time management skill to account for time spend on tutorial while
   meeting the project's milestones
 - How to troubleshoot issues with version control on remote repository such as GitHub
