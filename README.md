@@ -25,6 +25,7 @@ The following technologies was used to implement this system: JavaServer Pages, 
 - How to troubleshoot issues with version control on remote repository such as GitHub
 - Proper communication skills was essential to work collaborative on a remote project. For my part, I made word documents to the teammates working on backend. These documents hightlighted what methods are required, data format, query parameter names, to name a few.
 - Learnt how to deal and properly manage requirement changes.
+- The important of confirming and setting up the right development enivornment with all members on the team.
 
 ## Screenshots
 
